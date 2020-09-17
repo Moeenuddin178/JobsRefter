@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/current"
+            android:layout_marginRight="13dp"
+            android:text="25"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="-3dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:rotation="150"
+            android:layout_width="35dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/current"
+            android:layout_alignParentRight="true"
+            android:background="#d13033"/><!-- this is line -->
+        <TextView
+            android:layout_marginTop="-3dp"
+            android:id="@+id/total"
+            android:layout_marginRight="3dp"
+            android:text="25"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+           android:layout_below="@+id/current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:elevation="10dp"
+        android:outlineSpotShadowColor="@color/grey">
+
+        <ImageView
+            android:id="@+id/iv_images"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:padding="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/international" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/download"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/item_grad"
+                android:text="Download"
+                />
+
+            <Button
+                android:id="@+id/share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/item_grad"
+                android:text="Share"
+                android:layout_marginLeft="1dp"/>
+
+            <Button
+                android:id="@+id/apply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/item_grad"
+                android:text="Apply"
+                android:layout_marginLeft="1dp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:text="hi how are you i fin e and u are good i am also fine and hauhahiuhgsuigsiufgiuasgiuog biiyuag sdiougfisaugfiugasifugasuioygfiuoyasgfuyg"
+            android:id="@+id/search_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
